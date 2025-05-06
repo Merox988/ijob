@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>وظيفتي - منصة التوظيف</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+      background: #f9f9f9;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .search-bar {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    input {
+      padding: 12px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    section {
+      margin-top: 24px;
+    }
+    .jobs {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .card {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>وظيفتي - منصة التوظيف</h1>
+    <p>ابحث عن وظيفة أحلامك أو اعثر على أفضل المواهب</p>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="ابحث عن المسمى الوظيفي أو المهارة">
+    <button onclick="alert('جارٍ البحث عن الوظائف...')">بحث</button>
+  </div>
+
+  <section>
+    <h2>وظائف مميزة</h2>
+    <div class="jobs">
+      <div class="card">
+        <h3>مصمم واجهات</h3>
+        <p>شركة إبداع - الرياض</p>
+        <p>خبرة لا تقل عن سنتين في تصميم UI/UX</p>
+        <button onclick="alert('تم التقديم بنجاح!')">تقديم الآن</button>
+      </div>
+      <div class="card">
+        <h3>مطور ويب</h3>
+        <p>شركة حلول تقنية - جدة</p>
+        <p>معرفة جيدة بـ React وNode.js</p>
+        <button onclick="alert('تم التقديم بنجاح!')">تقديم الآن</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
